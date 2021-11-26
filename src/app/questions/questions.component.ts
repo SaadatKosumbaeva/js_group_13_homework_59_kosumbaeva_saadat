@@ -9,10 +9,10 @@ import { Question } from '../shared/question.model';
 })
 export class QuestionsComponent implements OnInit {
   questions!: Question[];
-  constructor(private questionService: QuestionService) { }
+
+  constructor(private questionService: QuestionService) {}
 
   ngOnInit(): void {
     this.questions = this.questionService.getQuestions();
   }
-
 }

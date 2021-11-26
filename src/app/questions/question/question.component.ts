@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Question } from '../../shared/question.model';
 
 @Component({
@@ -6,13 +6,6 @@ import { Question } from '../../shared/question.model';
   templateUrl: './question.component.html',
   styleUrls: ['./question.component.css']
 })
-export class QuestionComponent implements OnInit {
+export class QuestionComponent {
   @Input() question!: Question;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-
 }

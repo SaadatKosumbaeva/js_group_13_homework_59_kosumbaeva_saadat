@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { QuestionService } from './shared/question.service';
 import { BackgroundDirective } from './directives/background.directive';
 import { DisplayDirective } from './directives/display.directive';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DisplayDirective } from './directives/display.directive';
     QuestionComponent,
     AnswerComponent,
     BackgroundDirective,
-    DisplayDirective
+    DisplayDirective,
+    CounterComponent
   ],
   imports: [
     BrowserModule,

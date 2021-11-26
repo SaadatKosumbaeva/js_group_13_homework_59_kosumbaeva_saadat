@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { QuestionService } from '../shared/question.service';
 import { Question } from '../shared/question.model';
 
@@ -7,13 +7,11 @@ import { Question } from '../shared/question.model';
   templateUrl: './answer.component.html',
   styleUrls: ['./answer.component.css']
 })
-export class AnswerComponent implements OnInit {
+export class AnswerComponent {
   @Input() question!: Question;
   answer = '';
-  constructor(private questionService: QuestionService) { }
 
-  ngOnInit(): void {
-  }
+  constructor(private questionService: QuestionService) {}
 
   onAnswer() {
     if (this.answer.trim().length) {
