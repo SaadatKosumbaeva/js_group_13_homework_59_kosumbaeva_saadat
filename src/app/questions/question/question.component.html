@@ -2,8 +2,12 @@
   <h5 class="card-header">Question</h5>
   <div class="card-body">
     <p class="card-text">{{ question.question }}</p>
-    <button class="btn btn-secondary mb-2 mr-2">Help</button>
-    <span>{{ question.help }}</span>
+
+    <div appDisplay>
+      <button class="btn btn-secondary mb-2 mr-2">Help</button>
+      <span class="d-none">{{ question.help }}</span>
+    </div>
+
     <app-answer [question]="question"></app-answer>
   </div>
 </div>

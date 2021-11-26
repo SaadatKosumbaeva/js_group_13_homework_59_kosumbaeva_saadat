@@ -8,6 +8,7 @@ import { AnswerComponent } from './answer/answer.component';
 import { FormsModule } from '@angular/forms';
 import { QuestionService } from './shared/question.service';
 import { BackgroundDirective } from './directives/background.directive';
+import { DisplayDirective } from './directives/display.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BackgroundDirective } from './directives/background.directive';
     QuestionsComponent,
     QuestionComponent,
     AnswerComponent,
-    BackgroundDirective
+    BackgroundDirective,
+    DisplayDirective
   ],
   imports: [
     BrowserModule,
