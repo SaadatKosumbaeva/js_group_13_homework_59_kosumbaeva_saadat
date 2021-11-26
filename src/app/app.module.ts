@@ -7,6 +7,7 @@ import { QuestionComponent } from './questions/question/question.component';
 import { AnswerComponent } from './answer/answer.component';
 import { FormsModule } from '@angular/forms';
 import { QuestionService } from './shared/question.service';
+import { BackgroundDirective } from './directives/background.directive';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { QuestionService } from './shared/question.service';
     QuestionsComponent,
     QuestionComponent,
     AnswerComponent,
+    BackgroundDirective
   ],
   imports: [
     BrowserModule,
